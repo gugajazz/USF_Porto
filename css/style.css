@@ -1,0 +1,106 @@
+/*START Default starting declarations*/
+*,
+*::before, /* "*" seria suficiente mas ous outros são best practices"*/
+*::after{
+    box-sizing: inherit; /*from html{}*/
+}
+
+html{
+    font-size: 100%; /*font size equal to what the user defined in his browser*/
+    line-height: 1.5rem; /*distancia entre linhas maior*/
+    font-family: Arial, Helvetica, sans-serif; /*common font stack*/
+    box-sizing: border-box; /*novo default é border-box*/
+}
+
+body{
+    margin: 0 auto; /*remover margem top and bottom e centerar*/
+    padding: 0; /*remover padding*/
+    max-width: 1400px; /*maxima largura do body*/
+}
+
+img{
+    max-width: 100%; /*largura igual à largura do container onde está colocada*/
+    height: auto; /*preserva o aspect ratio*/
+    display: block; /*deixam de ser objetos inline*/
+}
+/*END Default starting declarations*/
+
+/*START Nav*/
+.nav-topo{
+    display: flex;
+    margin: 0 0 0.3rem 0; /*add margem em baixo*/
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /*background-color: hotpink;*/
+}
+
+.menu-nav{
+    display: flex;
+    flex-wrap: wrap; /*permite aos items ficarem em colunas se o espaco nao for suficiente*/
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;/*remove padding default à esquerda*/
+    margin: 0 0rem 0.4rem 0rem;/*remove margens iniciais em cima e baixo*/
+    /*background-color: yellow;*/
+}
+
+.items-menu-nav{
+    flex: 1 0 50%;/*grow shrink basis*/
+    text-align: center;
+}
+
+.items-menu-nav a, .logotipo a{
+    display: flex;
+    align-items: center; /*texto centrado na vertical*/
+    justify-content: center; /*centrados na horizontal*/
+    block-size: 65px; /*faz os blocos todlos da mesma altura independentemente do espaço q ocupa o texto*/
+    writing-mode: vertical-tb; /*same q o block-size*/
+    letter-spacing: 0.1rem; /*distancia entre letras*/
+    text-decoration: none; /*tirar sublinhado*/
+    transition: ease-in-out 500ms;
+    padding: 0rem;
+    background-color: white;
+    font-weight: 600;
+}
+
+.items-menu-nav a{
+    border-bottom: white solid 2px; /*previne q pagina salte qnd :hovver é triggered*/
+
+}
+
+.items-menu-nav a:hover{
+    border-bottom: black solid 2px;
+    transform: scale(1.1);
+}
+.items-menu-nav a:active{
+    transform: scale(0.9);
+}
+
+.logotipo{
+    margin: 0 auto;
+    color: indigo;
+}
+
+
+@media (min-width: 600px){
+
+}
+/*END Nav*/
+
+/*START Footer*/
+.foot-morada{
+    background-color: black;
+    color: white;
+    height: 20px; /*tamanho da caixa preta*/
+    line-height: 20px; /*permite q texto fique perto do topo da caixa preta*/
+    text-align: center;
+    font-size: 0.7rem;
+}
+/*END Footer*/
+
+
+
