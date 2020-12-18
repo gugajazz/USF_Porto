@@ -1,0 +1,55 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: -25px;
+    top: -16px;
+    background: #181818;
+    
+    
+    
+    
+   
+    
+    
+  }
+  li.conta
+  {
+  
+    margin-left: auto;
+
+  }
+  .nav li.logo{
+
+            color: blue;
+            font-size: 40px;
+
+  }
+
+  
+  .nav li {
+   
+    
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+  }
+  
+ 
+  .nav li:hover {
+    background-color:  #464646;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  
+  .nav li.active {
+    background-color: #464646;
+    color:blue;
+  }
