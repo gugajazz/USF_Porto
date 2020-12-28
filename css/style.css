@@ -12,7 +12,7 @@
 html{
     font-size: 100%; /*font size equal to what the user defined in his browser*/
     line-height: 1.5rem; /*distancia entre linhas maior*/
-    font-family: Arial, Helvetica, sans-serif; /*common font stack*/
+    font-family: 'Times New Roman', Times, serif; /*common font stack*/
     box-sizing: border-box; /*novo default é border-box*/
 }
 body{
@@ -32,7 +32,7 @@ img{
 /*START Nav*/
 header{
     width:100%; /*largura igual largura pagina*/
-    background-color:#253237; /*cor header*/
+    background-color:#52A0A0; /*cor header*/
     margin:0 0 50px 0;
     padding-right: 13px; /*qnd hover faz items aumentar este padding previne que haja side scroll*/
     padding-left: 6%; /*qnd em desktop mais pequeno que max-width da section previne q fique colado à esquerda*/
@@ -45,10 +45,15 @@ section{ /*logo mais hamburger*/
 }
 #logo{
     float:left; /*colar ao lado esquerdo*/ 
-    font-size:24px; 
-    color:#A6E1FA; 
-    font-weight:600; 
     padding:20px 0 0 0; /* padding em cima p centrar na vertical */
+}
+#logo img{
+    width: 100px;
+    height: 50px;
+}
+nav img{
+    width: 50px;
+    height: 50px;
 }
 nav{
     float:right; /*texto desktop centrado*/
@@ -56,15 +61,31 @@ nav{
 nav ul li{
     float:left; /*texto desktop ficar em linha*/
 }
+#conta{
+    padding: 15px 20px 0px 20px;
+     height: 74px;
+}
+#conta img:hover{
+    transform: scale(1.2);
+    transition: all 0.4s ease 0s;
+}
+#conta img{
+    padding: 0 0 0px 0;
+}
+#conta_li{
+    height: 0px;
+}
 nav ul li a{
-    color:#A6E1FA; /*texto desktop*/
-    font-size:18px; /*texto desktop*/
+    color:#F2F2F2; /*texto desktop*/
+    font-size:24px; /*texto desktop*/
     padding: 25px 20px; 
     display:inline-block; 
     transition: all 0.5s ease 0s;
 }
 nav ul li a:hover{
-    transform: scale(1.2);
+    background-color:  #4A8A8A;
+    color:#023B64;
+    /* transform: scale(1.2); */
     cursor: pointer; /*qnd hover fica mao*/
     transition: all 0.4s ease 0s;
 }
@@ -83,12 +104,15 @@ nav ul li a:hover{
 body{
     background-color: #F8F8F8;
 }
+#minhaconta{
+    display:none;
+}
 input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
 
 /* tem prioridade a todas as de cima */
 /*aplicam-se estas e todas as a cima*/
 /*td a baixo de 900*/
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     header{
         padding:20px 0 20px 0; 
     }
@@ -101,7 +125,9 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
     body{
         background-color: #F8F8F8;
     }
-    
+    #minhaconta{
+        display:inline-block;
+    }
     label { /* hamburger */
         float:right; /* ficar a direita */
         padding:8px 0px 8px 0;
@@ -134,9 +160,12 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
         display:block; /*ocupam a largura td do dropdown*/
         border-bottom: 2px solid #5C6B73; /*border em baixo*/
     }
+    #conta{
+        display:none; /*nao mostrar logo qnd em modo hamburger*/
+    }
     nav ul li a:hover{
         border-bottom: 2px solid #5C6B73;
-        transform: scale(1.1);
+        font-size: 17px;
         background-color: #C2DFE3;
         cursor: pointer; /*qnd hover fica mao*/
         transition: all 0.4s ease 0s;
