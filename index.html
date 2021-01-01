@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="css/style.css">
 <head>
+  <link rel="icon" type="image/png" href="imgs/icone.png"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <title>USF Porto</title>
 </head>
 
@@ -69,7 +71,7 @@
                 <li id=conta_li>
                   <a id=conta>
                     <i></i>
-                    <img src="/imgs/conta_white.png" alt="Imagem Conta">
+                    <img src="imgs/conta_white.png" alt="Imagem Conta">
                   </a>
                 </li>
 
@@ -81,13 +83,81 @@
 
 
 <main>
-  <h1>Bem Vindo à Unidade De Saude Familiar Do Porto</h1>
-  <img src="imgs/teste.png" alt="teste bro">
-  <img src="imgs/teste.png" alt="teste bro">
+
+  <div class="slideshow-container">
+    <div class="mySlides fade" id="inicio">
+      <img src="imgs/surgery.jpg" style="width:100%">
+      <div class="textoSlide">Bem Vindo à Unidade De Saude Familiar Do Porto</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="imgs/acamados.jpg" style="width:100%">
+      <div class="textoSlide">Bem Vindo à Unidade De Saude Familiar Do Porto</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="imgs/doctor.jpg" style="width:100%">
+      <div class="textoSlide">Bem Vindo à Unidade De Saude Familiar Do Porto</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </div>
+
+  <div class="container_conteudo">
+    <div class="conteudo1">
+      <h1>Texto</h1>
+      <p>To prevent the spread of the new coronavirus, ALL visits to patients in the hospital are prohibited.</p>
+      <br><p>Only close relatives with a special permit may visit the hospital.</p>
+      <br><p>To obtain a permit, contact the department where the patient is cared for through our switchboard 08-5870 10 00.</p>    </div>
+
+    <div class="conteudo2">
+      <h1>Há cancros que podem ser prevenidos.</h1>
+      <h2>O Papilomavírus Humano, ou HPV, não escolhe sexos nem idades, a prevenção também não.</h2>
+      <p>To prevent the spread of the new coronavirus, ALL visits to patients in the hospital are prohibited.</p>
+      <br><p>Only close relatives with a special permit may visit the hospital.</p>
+      <br><p>To obtain a permit, contact the department where the patient is cared for through our switchboard 08-5870 10 00.</p>    </div>
+
+    <div class="conteudo1">
+      <h1>Texto</h1>
+      <p>To prevent the spread of the new coronavirus, ALL visits to patients in the hospital are prohibited.</p>
+      <br><p>Only close relatives with a special permit may visit the hospital.</p>
+      <br><p>To obtain a permit, contact the department where the patient is cared for through our switchboard 08-5870 10 00.</p>    </div>
+
+    <div class="conteudo2">
+      <h1>Texto</h1>
+      <p>To prevent the spread of the new coronavirus, ALL visits to patients in the hospital are prohibited.</p>
+      <br><p>Only close relatives with a special permit may visit the hospital.</p>
+      <br><p>To obtain a permit, contact the department where the patient is cared for through our switchboard 08-5870 10 00.</p>
+    </div>
+  </div>
+
 </main>
 
 <footer>
-    <p>•Rua do Molhe, 181, 4150-502 Porto</p>
+  <div class="container_footer">
+    <p>Rua do Molhe, 181, 4150-502 Porto</p>
+    <p>Copyright © 2020 USF Porto. All rights reserved.Company Registration No. 250219242G.</p>
+    <div class="social">
+      <p>Contacte-nos: </p>
+      <ul>
+        <li><a href="https://www.instagram.com"><img src="imgs/instagram.png" alt="instagram"></a></li>
+        <li><a href="https://www.linkedin.com/"><img src="imgs/linkedln.png" alt="linkedin"></a></li>
+        <li><a href="https://www.youtube.com/"><img src="imgs/youtube.png" alt="youtube"></a></li>
+        <li><a href="https://www.facebook.com/"><img src="imgs/facebook.png" alt="facebook"></a></li>
+      </ul>
+    </div>
+  </div>
+
 </footer>
 
 </body>

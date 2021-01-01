@@ -1,4 +1,4 @@
-/*START Default starting declarations*/
+/* #region Default starting declarations  */
 *,
 *::before, /* "*" seria suficiente mas ous outros são best practices"*/
 *::after{
@@ -25,15 +25,14 @@ img{
     height: auto; /*preserva o aspect ratio*/
     display: block; /*deixam de ser objetos inline*/
 }
-/*END Default starting declarations*/
+/* #endregion Default starting declarations*/
 
 
-
-/*START Nav*/
+/* #region Nav */
 header{
     width:100%; /*largura igual largura pagina*/
     background-color:#52A0A0; /*cor header*/
-    margin:0 0 50px 0;
+    margin:0 0 0px 0;
     padding-right: 13px; /*qnd hover faz items aumentar este padding previne que haja side scroll*/
     padding-left: 6%; /*qnd em desktop mais pequeno que max-width da section previne q fique colado à esquerda*/
 }
@@ -48,8 +47,8 @@ section{ /*logo mais hamburger*/
     padding:20px 0 0 0; /* padding em cima p centrar na vertical */
 }
 #logo img{
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
 }
 nav img{
     width: 50px;
@@ -114,7 +113,7 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
 /*td a baixo de 900*/
 @media (max-width: 1050px) {
     header{
-        padding:20px 0 20px 0; 
+        padding:20px 0 0px 0; 
     }
     #logo{
         padding:0px; /*centrar*/
@@ -139,12 +138,21 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
     }
     nav{ /*dropdown menu*/
         display:none; /*default menu off*/
-        position:absolute; 
+        position:absolute;
         right:0px; /*distancia da direita*/
-        top:53px; /*distancia do topo*/
+        top:78px; /*distancia do topo*/
         z-index:9999; /*ficar por cima de td o resto (9999 valor max)*/
-        background-color:#C2DFE3; 
-
+        background-color:#C2DFE3;
+    }
+    .toggle-menu ul{
+        width:35px; /* largura do hamburger */
+        padding:0 0 10px 0;
+    }
+    .toggle-menu ul li{
+        width:100%; /*largura igual a largura da ul*/ 
+        height:6px; /*altura das fatias do hamburger*/
+        background-color:#A6E1FA; /*cor do hamburger*/
+        margin-bottom:7px; /*distancia entre fatias do hamburger*/
     }
     nav ul{
         width:auto; /*largura menu dropdown*/
@@ -176,27 +184,33 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
 /*aplicam-se estas e todas as a cima*/
 /*td a baixo de 420*/
 @media (max-width: 420px) {
+    nav{ /*dropdown menu*/
+        top:80px; /*distancia do topo*/
+    }
+    .toggle-menu ul{
+        width:35px; /* largura do hamburger */
+    }
+    .toggle-menu ul li{
+        width:100%; /*largura igual a largura da ul*/ 
+        height:5px; /*altura das fatias do hamburger*/
+        background-color:#A6E1FA; /*cor do hamburger*/
+        margin-bottom:7px; /*distancia entre fatias do hamburger*/
+    }
     label{
         padding:5px 0 0 0; /*altura do hamburger*/
     } 
     #logo{
         font-size: 20px;
+        padding: 0 0 20px 0;
     }
-    nav{
-        top:49px; /* distancia do drop-down ao hamburger */
-    } 
     body{
         background-color: #F8F8F8;
     }
-    h1{
-        font-size: 1.4rem;  
-    }
 }
-/*END Nav*/
+/* #endregion Nav */
 
 
-
-/*START Main*/
+/* #region Main */
 main img{
     margin: 0 auto;
 }
@@ -208,21 +222,242 @@ main h1{
     color: #253237;
     text-shadow: 1px 1px black;
 }
-/*END Main*/
+/* #endregion Main*/
 
 
+/* #region Slideshow */
+.mySlides{
+    display: none
+}
+#inicio {
+    display: block;
+}
+.mySlides img {
+    vertical-align: middle;
+    object-fit: cover; /*crop image as you expand to prevent streching*/
+    max-height: 300px; /*max height img*/
+    border: 5px solid #52A0A0;
+    border-top: 0px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto; /*Tamanho da img igual à janela*/
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.textoSlide {
+  position: absolute;
+  bottom: 8px;
+  margin: 0 23.7% 120px 23.7%;
+  width: auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 37px;
+  border-width: 1px;
+  border-color: #cccccc;
+  background-color: rgba(256,256,256,0.8);
+  color: #023B64;
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  line-height: 45px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media (max-width: 810px){
+    .textoSlide {
+        margin: 0 15% 77px 15%;
+    }
+}
+@media (max-width: 605px){
+    .textoSlide {
+        margin: 0 15% 100px 15%;
+        line-height: 26px;
+        font-size: 30px;
+      }
+}
 
-/*START Footer*/
+@media (max-width: 376px){
+    .textoSlide {
+        margin: 0 15% 60px 15%;
+        font-size: 25px;
+      }
+}
+
+@media (max-width: 300px){
+    .textoSlide {
+        margin: 0 15% 15px 15%;
+        font-size: 25px;
+    }
+}
+
+/* #endregion Slideshow*/
+
+
+/* #region Conteudo */
+.container_conteudo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px 30px 0 30px;
+}
+.conteudo1{    
+    max-width: 600px;
+    padding: 10px;
+    border: 15px solid #F7F0C8;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.conteudo2{
+    background-color: white;
+    align-items: start;
+    max-width: 600px;
+    padding: 10px;
+    border: 15px solid #C0D5EC;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    color: #023B64;
+}
+
+@media (max-width: 900px){
+    .container_conteudo{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+}
+@media (max-width: 480px){
+    .conteudo1{    
+        padding: 10px;
+        border: 15px solid #F7F0C8;
+        background-color: white;
+        text-align: center;
+    }
+    .conteudo2{
+        background-color: white;
+        align-items: start;
+        width: 400px;
+        padding: 10px;
+        border: 15px solid #C0D5EC;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* #endregion Conteudo*/
+
+/* #region Footer */
 footer{
-    background-color: #121717;
+    background-color: rgba(4, 14, 20, 0.8);
     color: #E0FBFC;
     text-align: center;
-    font-size: 0.7rem;
-    position: relative;
-    height: 30px;    
+    font-size: 1rem;
+    height: 130px;    
     width: 100%;
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 0; /*distancia entre body e footer*/
 }
-/*END Footer*/
+.social{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+}
+.social li{
+    display: inline-block; /*icones em linha*/
+    margin: 0 0 0 .5rem; /*distancia entre icones*/
+}
+@media (max-width: 640px){
+    footer{
+        display: inline-block;
+        text-align: center;
+        font-size: 0.8rem;
+        height: 110px;    
+        width: 100%;
+        margin: 15px 0 0 0; /*distancia entre body e footer*/
+    }
+    .social{
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-top: 0px; /*distancia antre contactenos e copyright*/
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+}
+@media (max-width: 482px){
+    footer{
+        height: 135px;
+    }
+}
+@media (max-width: 274px){
+    footer{
+        height: 160px;
+    }
+}
+/* #endregion Footer*/
 
 
