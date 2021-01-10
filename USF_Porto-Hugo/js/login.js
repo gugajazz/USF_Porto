@@ -5,7 +5,7 @@
       if (form_conta.checkValidity()) {
 
        if (utilizador.value == "exemplo" && palavrapasse.value == "exemplo"){
-         alert("sucesso");
+        window.location.href = "loginsucesso.html";
         }
        else {         
           form_conta.classList.add("invalido");
