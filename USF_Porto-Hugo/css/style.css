@@ -479,6 +479,7 @@ main h2{
 }
 
 
+
 .container_conteudo{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
