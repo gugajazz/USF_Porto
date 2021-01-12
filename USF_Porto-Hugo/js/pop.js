@@ -8,14 +8,14 @@ google.charts.load("current", {packages:["corechart"]});
           ['Idosa',  61353],
           
         ]);
+        
 
         var options = {
-          width: 450,
-          height: 450,
+          backgroundColor: '#e0ecf7',
           title: 'Percentagem de população activa, jovem e idosa no Porto',
           is3D: true,
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
         chart.draw(data, options);
       }

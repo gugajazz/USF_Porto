@@ -1,6 +1,7 @@
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
+
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Ano', 'Índice de Dependência Total', { role: 'style' } ],
@@ -14,12 +15,11 @@ function drawChart() {
   var view = new google.visualization.DataView(data);
   view.setColumns([0, 1, 1, 2]);
 
-  var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.ComboChart(document.getElementById('columnchart_div'));
 
   chart.draw(view, {
-    height: 450,
-    width: 450,
     title: "Índice de Dependência Total do Porto",
+    backgroundColor: '#e0ecf7',
     series: {
       0: {
         type: 'bars'
@@ -35,3 +35,4 @@ function drawChart() {
     }
   });
 }
+
