@@ -121,6 +121,7 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
     width: 100%;   
     margin-top: -8px;
     overflow: hidden;
+    z-index: 9999;
     
 }
 
@@ -618,7 +619,7 @@ main h2{
 
 @media (max-width: 900px){
 
-    .conteudo1, .conteudo2, .conteudo4{
+    .conteudo1, .conteudo2{
         margin: 0;
     }
 }

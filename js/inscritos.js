@@ -1,6 +1,6 @@
 google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
+google.charts.setOnLoadCallback(drawChart2);
+function drawChart2() {
   var data = google.visualization.arrayToDataTable([
     ['Utentes Inscritos', 'Quantidade'],
     ['Utentes Inscritos por Médico',     10029],
@@ -16,3 +16,7 @@ function drawChart() {
   var chart = new google.visualization.PieChart(document.getElementById('donutchart_div'));
   chart.draw(data, options);
 }
+
+$(window).resize(function(){
+  drawChart2();
+});
