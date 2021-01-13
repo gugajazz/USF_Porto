@@ -29,6 +29,11 @@ img{
 
 
 /* #region Nav */
+#onde_estamos{
+    display: none;
+    
+}
+
 header{
     width:100%; /*largura igual largura pagina*/
     background-color:#849ead; /*cor header*/
@@ -151,6 +156,14 @@ display: block;
     }
 }
 @media (max-width: 1050px) {
+    #onde_estamos{
+        display: inline;
+        margin: 0 0 0 35%;
+        font-size: 30px;
+        font-weight: 600;
+        color: #023B64;
+        line-height: 45px;
+    }
     #conta_li{
         display:none;
     }
@@ -221,7 +234,17 @@ display: block;
         transition: all 0.4s ease 0s;
     }
 }
-
+@media (max-width: 760px) {
+    #onde_estamos{
+        margin: 0 0 0 30%;
+    }
+}
+@media (max-width: 500px) {
+    #onde_estamos{
+        font-size: 23px;
+        margin: 0 0 0 25%;
+    }
+}
 /* tem prioridade a todas as de cima */
 /*aplicam-se estas e todas as a cima*/
 /*td a baixo de 420*/
@@ -247,6 +270,11 @@ display: block;
     }
     body{
         background-color: #F8F8F8;
+    }
+}
+@media (max-width: 390px) {
+    #onde_estamos{
+        margin: 0 0 0 15%;
     }
 }
 /* #endregion Nav */
@@ -439,6 +467,25 @@ main h2{
 .form_quemsomos #submit_assunto:hover{
     background-color: grey;
 }
+.form_oqfazemos{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-items: center;
+
+}
+.form_oqfazemos input{
+    margin: 5px 10px 5px 10px;
+    padding: 10px;   
+    border: 1px solid #ddd;
+    width: 50%;
+}
+.form_oqfazemos input:focus{
+    border-color: rgb(43, 79, 236);
+}
+.radios .shit{
+    display: inline;
+}
 .maps{
     position: relative;
     padding-bottom: 75%; /* This is the aspect ratio */
@@ -468,7 +515,7 @@ main h2{
 #form_conta input:focus{
     border-color: rgb(43, 79, 236);
 }
-#submit_login,#submit_registar{
+#submit_login,#submit_registar,#submit_consulta,#submit_assunto{
     background-color: #849ead;
     color: #343d41;
     border-radius: 10px;
