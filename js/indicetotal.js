@@ -1,8 +1,8 @@
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart1);
 
 
-function drawChart() {
+function drawChart1() {
     var data = google.visualization.arrayToDataTable([
         ['Ano', 'Índice de Dependência Total', { role: 'style' } ],
         ['2015', 64.5, 'color: blue'],
@@ -34,6 +34,12 @@ function drawChart() {
       maxValue: 100
     }
   });
-
+  
+  
 }
+
+
+$(window).resize(function(){
+  drawChart1();
+});
 

@@ -1,6 +1,6 @@
 google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+      google.charts.setOnLoadCallback(drawChart3);
+      function drawChart3() {
         var data = google.visualization.arrayToDataTable([
           ['Grupo etário', 'Percentagem'],
           ['Jovem',     28041],
@@ -19,3 +19,7 @@ google.charts.load("current", {packages:["corechart"]});
         var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
         chart.draw(data, options);
       }
+
+ $(window).resize(function(){
+        drawChart3();
+      });

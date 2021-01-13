@@ -54,3 +54,7 @@ function chart()
 
   chart.draw(data, options);
 }
+
+$(window).resize(function(){
+  chart();
+});
