@@ -624,19 +624,16 @@ main h2{
 }
 
 @media (max-width: 480px){
-     .container_conteudo{
-        display: inline-block;
-    }
     .container_conteudo{
-        max-width: 600px;
+        display: block;
     }
-     .conteudo1 , .conteudo2{
+    .conteudo1 , .conteudo2{
         margin-bottom: 10px;
-     }
-     .conteudo1 h1, .conteudo2 h1{
+    }
+    .conteudo1 h1, .conteudo2 h1{
         font-size: 22px;
-     }
-     .conteudo1 h2, .conteudo2 h2{
+    }
+    .conteudo1 h2, .conteudo2 h2{
          font-size: 17px;
     }
     .conteudo1 p, .conteudo2 p{
