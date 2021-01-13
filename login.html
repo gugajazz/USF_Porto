@@ -61,25 +61,41 @@
               </li>
 
               <li>
-                <a class="ativo" href="maisapoio.html">
+                <a href="maisapoio.html">
                   <i></i>
                   Mais Apoio
                 </a>
               </li>
 
-              <li id=minhaconta>
-                <a>
+              <li class="ativo" id=minhaconta>
+                <a href="login.html">
                   <i></i>
                   Minha Conta
-                </a>
+                </a>               
               </li>
               
               <li id=conta_li>
-                <a href="login.html" id=conta>
+                <a class="ativo" id=conta>
                   <i></i>
                   <img src="imgs/conta_white.png" alt="Imagem Conta">
                 </a>
+                <ul class="navsub">
+                 <li> 
+                   <a class="ativo"  href="login.html">
+                     <i></i>
+                     Login
+                   </a>
+                  </li>
+                 <li> 
+                   <a href="registar.html">
+                     <i></i>
+                     Registo
+                   </a>
+                 </li>
+                </ul>
               </li>
+
+              
 
           </ul>
       </nav>
@@ -90,37 +106,29 @@
 
 <main>
 
-  <div class="container_conteudo_grande">
-    <div class="conteudo3">
-      <h1>Questoes Frequentes:</h1>
-      <h2>Qual é o telefone da USF Porto?</h2>
-      <br><p>Dirija-se <a href="/quemsomos.html">aqui</a> para consultar os nossos contactos</p>
-      <br><h2>Como faço para agendar uma consulta?</h2>
-      <br><p>Atravez do <a href="/oquefazemos.html">formulario disponivel</a> ou <a href="/quemsomos.html">contactando-nos</a> diretamente</p>
-      <br><h2>Qual é o melhor horário para ir à USF Porto?</h2>
-      <br><p>Por favor verifique <a href="/indicadores.html">aqui</a> os graficos relativos à nossa lotaçao.</p>
-      <br><h2>A USF Porto dispõe de parque de estacionamento?</h2> 
-      <br><p>A USF Porto tem cerca de 20 lugares de estacionamento sujeitos a parquimetro.</p>
-      <br><h2>Onde se localiza a USF Porto?</h2>
-      <br><p>Na <a href="/quemsomos.html">Rua de Santos Pousada 298, 4000-478 Porto</a>.</p>
-    </div>
+ <div class="container_conteudo_grande">
+   <div class="conteudo3">          
+     <h1>Conta de Utilizador</h1>       
+     
 
-    <div class="conteudo3">
-      <h1>Contactos Relevantes:</h1>
-      <h2>Numero nacional de emergencia:</h2><p>911</p>
-      <h2>Saude 24:</h2><p>808 24 24 24</p>
-      <h2>Mulheres Vitimas de violência:</h2><p>800 202 148</p>
-      <h2>SOS droga:</h2><p>1414</p>
-      <h2>Linha SOS, Estudante:</h2><p>808 200 204</p>
-      <h2>Centro SOS, Voz Amiga:</h2><p>800 202 669</p>
-      <h2>Alcoólicos Anónimos:</h2><p>217 162 969</p>
-      <h2>SOS Criança:</h2><p>217 931 617</p>
+      <form id="form_conta" onsubmit="return false" > 
+       <br>
+       <h2>Nome de Utilizador <span class="required">*</span></h2>
+       <input type="text" name="username" id="utilizador" placeholder="Nome de Utilizador" required />
+       <br></br>
+       <h2>Palavra-passe <span class="required">*</span></h2>
+       <input type="password" name="password" id="palavrapasse" placeholder="Palavra-passe" required />
+       <br></br>
+       <input id="submit_login" type="submit" value="Login">       
+       
+       <p class="nota">Os campos assinalados por <span class="required">*</span> são de preenchimento obrigatório.</p>
+       <br>
+       <p class="nota_registar">Caso não tenha conta clique <a href="registar.html" id="link">aqui</a> para se registar.</p>        
 
-
-    </div>
-
-  </div>
-
+      </form> 
+      <br><br><br>
+    </div> 
+ </div>
 </main>
 
 <footer>
@@ -139,6 +147,6 @@
   </div>
 
 </footer>
-
+<script src="js/login.js"></script>
 </body>
 </html>

@@ -106,6 +106,7 @@ body{
 #minhaconta{
     display:none;
 }
+
 input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
 
 .navsub{
@@ -117,12 +118,12 @@ input[type=checkbox], label{display:none;} /*desktop nao mostrar hamburger*/
     overflow: hidden;
     
 }
+
 .navsub a {
-    padding: 20px 10px;
+    padding: 20px 26px 20px 18px;
     text-decoration: none;
     display: block;   
-    
-  }
+}
  
 #conta_li{
     position: relative;
@@ -138,11 +139,21 @@ display: block;
     background-color:  #4A8A8A;
     color:#023B64;
 }
-
+#conta_li a {
+    font-size: 20px;
+}
 /* tem prioridade a todas as de cima */
 /*aplicam-se estas e todas as a cima*/
 /*td a baixo de 900*/
+@media (max-width: 1170px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+}
 @media (max-width: 1050px) {
+    #conta_li{
+        display:none;
+    }
     header{
         padding:20px 0 0px 0; 
     }
@@ -430,7 +441,7 @@ main h2{
 }
 .maps{
     position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
+    padding-bottom: 75%; /* This is the aspect ratio */
     height: 0;
     overflow: hidden;
 }
@@ -445,11 +456,14 @@ main h2{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    align-items: center;
+
 }
 #form_conta input{
     margin: 5px 10px 5px 10px;
     padding: 10px;   
     border: 1px solid #ddd;
+    width: 50%;
 }
 #form_conta input:focus{
     border-color: rgb(43, 79, 236);
@@ -463,8 +477,11 @@ main h2{
 .required{
     color: rgb(228, 0, 0);
 }
-#nota{
-    margin-right: auto;
+.nota_registar{
+    /* margin-right: auto; */
+}
+.nota{
+    font-size: 15px;
 }
 #link{
     color: #4A8A8A;
@@ -489,13 +506,10 @@ main h2{
     width: 100%;
     height: 450px;
 }
-
 #donutchart_div{
     width: 100%;
     height: 450px;
 }
-
-
 .container_conteudo{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -529,14 +543,7 @@ main h2{
     background-color: #e0ecf7;
     border: grey 3px solid;
 }
-.container_conteudo_grande{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    gap: 20px;
-    padding: 20px 30px 0 30px;
-}
 .conteudo3{
-    background-color: white;
     align-items: start;
     padding: 10px;
     text-align: center;
@@ -548,10 +555,16 @@ main h2{
     background-color: #e0ecf7;
     border: grey 3px solid;
 }
+.container_conteudo_grande{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    gap: 20px;
+    padding: 20px 30px 0 30px;
+}
+
 .conteudo h1{
     color: #023B64;
 }
-
 .conteudo h2{
     color: #023B64;
 }

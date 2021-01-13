@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <title>USF Porto</title>
-  
- 
 </head>
 
 <body>
@@ -50,7 +47,7 @@
               </li>
 
               <li>
-                <a class="ativo" href="indicadores.html">
+                <a href="indicadores.html">
                   <i></i>
                   Indicadores
                 </a>
@@ -69,21 +66,36 @@
                   Mais Apoio
                 </a>
               </li>
-              
 
-              <li id=minhaconta>
+              <li class="ativo" id=minhaconta>
                 <a>
                   <i></i>
                   Minha Conta
-                </a>
+                </a>               
               </li>
               
               <li id=conta_li>
-                <a href="login.html" id=conta>
+                <a class="ativo" id=conta>
                   <i></i>
                   <img src="imgs/conta_white.png" alt="Imagem Conta">
                 </a>
+                <ul class="navsub">
+                 <li> 
+                   <a href="login.html">
+                    <i></i>
+                    Login
+                   </a>
+                 </li>
+                 <li> 
+                   <a class="ativo" href="registar.html">
+                     <i></i>
+                     Registo
+                   </a>
+                 </li>
+                </ul>
               </li>
+
+              
 
           </ul>
       </nav>
@@ -94,25 +106,32 @@
 
 <main>
 
-
-  <div class="container_conteudo">
-    <div class="conteudo1">
-      <div id="columnchart_div"></div>
-     
-    </div>
-
-    <div class="conteudo2">
-      <div id="pyramidchart_div" ></div>
-    </div>
-
-    <div class="conteudo1">
-      <div id="piechart_div" ></div>
-    </div>
-
-    <div class="conteudo2">
-      <div id="donutchart_div" ></div>
-    </div>
-  </div>
+    <div class="container_conteudo_grande">
+        <div class="conteudo3">          
+          <h1>Registar</h1>         
+          <form id="form_conta" onsubmit="return false" >
+          <p id="nota">Caso já tenha conta clique <a href="login.html" id="link">aqui</a> para iniciar a sua sessão.</p>
+          <br></br>
+          <h2>Nome de Utilizador <span class="required">*</span></h2>
+          <input type="text" name="utilizador" id="utilizador" placeholder="Nome de Utilizador" required />
+          <h2>E-mail <span class="required">*</span></h2>
+          <input type="email" name="email" placeholder="E-mail" id="email" required />
+          <h2>Palavra-passe <span class="required">*</span></h2>
+          <input type="password" name="palavra-passe" id="palavra-passe" placeholder="Palavra-passe" required />
+          <br></br>
+          <input id="submit_registar" type="submit" value="Registar">
+          <br></br>
+          <p id="nota">Os campos assinalados por <span class="required">*</span> são de preenchimento obrigatório.</p>
+          <br></br>
+          <br></br>
+          <br></br>          
+          
+        </form>
+        </div>
+    
+       
+    
+      </div>
 
 </main>
 
@@ -132,10 +151,6 @@
   </div>
 
 </footer>
-<script src="js/indicetotal.js"></script>
-<script src="js/grupoetario.js"></script>
-<script src="js/pop.js"></script>
-<script src="js/inscritos.js"></script>
-
+<script src="js/registar.js"></script>
 </body>
 </html>
