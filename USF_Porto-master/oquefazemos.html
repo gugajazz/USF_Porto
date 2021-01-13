@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="imgs/icon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>USF Porto</title>
+</head>
+
+<body>
+<header>
+    <section>
+        <a href="index.html" id="logo"><img src="imgs/logo.png" alt="Logo USF Porto"></a>
+        <label for="toggle-1" class="toggle-menu">
+            <ul>
+                <li></li> <!-- cada um é uma linha do hamburger -->
+                <li></li>
+                <li></li>
+            </ul>
+        </label>
+    
+        <input type="checkbox" id="toggle-1">   <!-- permite clicar no hamburger -->
+    
+        <nav>
+          <ul>
+
+            <li>
+              <a href="home.html">
+                <i></i>
+                Home
+              </a>
+            </li>
+
+              <li>
+                <a href="quemsomos.html">
+                  <i></i>
+                  Quem Somos
+                </a>
+              </li>
+
+              <li>
+                <a class="ativo" href="oquefazemos.html">
+                  <i></i>
+                  O Que Fazemos
+                </a>
+              </li>
+
+              <li>
+                <a href="indicadores.html">
+                  <i></i>
+                  Indicadores
+                </a>
+              </li>
+
+              <li>
+                <a href="recursos.html">
+                  <i></i>
+                  Recursos
+                </a>
+              </li>
+
+              <li>
+                <a href="maisapoio.html">
+                  <i></i>
+                  Mais Apoio
+                </a>
+              </li>
+
+              <li id=minhaconta>
+                <a href="login.html">
+                  <i></i>
+                  Minha Conta
+                </a>
+              </li>
+              
+              <li id=conta_li>
+                <a href="login.html" id=conta>
+                  <i></i>
+                  <img src="imgs/conta_white.png" alt="Imagem Conta">
+                </a>
+                <ul class="navsub">
+                  <li> 
+                    <a href="login.html">
+                     <i></i>
+                     Login
+                    </a>
+                  </li>
+                  <li> 
+                    <a href="registar.html">
+                      <i></i>
+                      Registo
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+
+          </ul>
+      </nav>
+    
+    </section>
+</header>
+
+
+
+<main>
+
+  <div class="container_conteudo_grande">
+
+    <div class="conteudo3">
+      <form class="form_oqfazemos" action="">
+        <h1>Agendamento de consultas:</h1>
+        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome">
+        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+        <p>Genero com que se identifica:</p>
+        <br>
+        Homem<input type="radio" name="sexo" value="H">
+        Mulher<input type="radio" name="sexo" value="M"><br>
+        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4">
+        <p>Idade</p> <input type="number" name="idade" min="0" max="140">
+        <p>Morada:</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto">
+        <p>Comentario: (opcional)</p><textarea name="comentario"  rows="5" placeholder=""></textarea>
+        <p>O medico que prefere:</p>
+        <select name="assunto" class="select_assunto">
+          <option value="Duvidas">Jorge</option>
+          <option value="Reclamacoes">Miguel</option>
+          <option value="Esclarecimento de Duvidas">Luisa</option>
+        </select>
+        <br><br>
+        <input id="submit_consulta" type="submit" value="Submeter">
+      </form>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container_footer">
+    <p>Rua de Santos Pousada 298, 4000-478 Porto</p>
+    <p>Copyright © 2020 USF Porto. All rights reserved.Company Registration No. 250219242G.</p>
+    <div class="social">
+      <p>Acompanhe-nos: </p>
+      <ul>
+        <li><a href="https://www.instagram.com"><img src="imgs/instagram.png" alt="instagram"></a></li>
+        <li><a href="https://www.linkedin.com/"><img src="imgs/linkedln.png" alt="linkedin"></a></li>
+        <li><a href="https://www.youtube.com/"><img src="imgs/youtube.png" alt="youtube"></a></li>
+        <li><a href="https://www.facebook.com/"><img src="imgs/facebook.png" alt="facebook"></a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
