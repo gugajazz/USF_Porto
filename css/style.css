@@ -650,7 +650,7 @@ main h2{
     .container_conteudo{
         display: block;
     }
-    .conteudo1 , .conteudo2{
+    .conteudo1 , .conteudo2, .conteudo3{
         margin-bottom: 10px;
     }
     .conteudo1 h1, .conteudo2 h1{
