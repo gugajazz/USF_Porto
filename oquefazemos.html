@@ -112,18 +112,18 @@
     <div class="conteudo3">
       <form class="form_oqfazemos" action="">
         <h1>Agendamento de consultas:</h1>
-        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome">
-        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>
+        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
         <p>Genero com que se identifica:</p>
         <br>
-        Homem<input type="radio" name="sexo" value="H">
-        Mulher<input type="radio" name="sexo" value="M"><br>
-        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4">
-        <p>Idade</p> <input type="number" name="idade" min="0" max="140">
-        <p>Morada:</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto">
+        Homem<input type="radio" name="sexo" value="H" required>
+        Mulher<input type="radio" name="sexo" value="M" required><br>
+        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
+        <p>Idade</p> <input type="number" name="idade" min="0" max="140" required>
+        <p>Morada:</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto" required>
         <p>Comentario: (opcional)</p><textarea name="comentario"  rows="5" placeholder=""></textarea>
         <p>O medico que prefere:</p>
-        <select name="assunto" class="select_assunto">
+        <select name="medico" class="select_medico">
           <option value="Duvidas">Jorge</option>
           <option value="Reclamacoes">Miguel</option>
           <option value="Esclarecimento de Duvidas">Luisa</option>
@@ -135,6 +135,41 @@
 
   </div>
 
+  <div class="container_conteudo">
+    <div class="conteudo1">
+      <h1>Programa de Vacinação</h1>
+      <h2>Onde me posso vacinar?</h2>
+      <p>As vacinas do programa nacional de vacinação são administradas em todos os centros de 
+        saúde, a USF Porto incluida.</p>
+        <p>Além das vacinas do programa nacional de vacinação, é frequente os médicos assistentes 
+        prescreverem outras vacinas. 
+        Estas vacinas, que não pertencem ao programa nacional de vacinação, podem ser administradas na 
+        maioria dos hospitais e unidades de saude.</p>
+        <br>
+        <h2>Como fazer uma marcação para ser vacinado?</h2>
+        <p><a href="quemsomos.html">Contacte-nos</a> ou <a href="quemsomos.html">dirija-se à USF Porto</a> para fazer uma marção</p>
+        <p>Para qualquer vacina, no dia da vacinação é obrigatório trazer o original do Boletim de Vacinas.</p>
+    </div>
+
+    <div class="conteudo1">
+      <h1>Rastreio do cancro do colón e reto</h1>
+      <p>As doenças oncológicas são a segunda causa de morte mais frequente no nosso país e a que tem 
+        maior tendência para aumentar. </p>
+        <p>O envelhecimento da população e as modificações de estilos de 
+        vida têm contribuído para o aumento relativo da incidência.
+        Por outro lado, o aumento dos sucessos terapêuticos contribui para o aumento significativo do 
+        número de sobreviventes de cancro, tendo esta população necessidades particulares, tanto em 
+        termos clínicos como sociais.</p>
+        <br>
+        <h2>Quando fazer o rastreio e quando?</h2>
+        <p>Todas as pessoas, sem patologia do cancro do cólon e reto, com idades compreendidas entre 
+          os 50 e os 74 anos. O rastreio deve ser feito de 2 em 2 anos.</p>
+        <br>
+        <h2>Como fazer uma marcação?</h2>
+        <p><a href="quemsomos.html">Contacte-nos</a> ou <a href="quemsomos.html">dirija-se à USF Porto</a> para fazer uma marção</p>
+    </div>
+
+  </div>
 </main>
 
 <footer>

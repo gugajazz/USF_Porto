@@ -163,8 +163,8 @@
       <div class="conteudo1">
         <form class="form_quemsomos" action="">
           <h2>Utilize este formulario para comunicar quaisqueres suguestões, reclamações ou duvidas</h2><br>
-          <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome">       
-          <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+          <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>       
+          <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
           <p>Assunto:</p>
           <select name="assunto" class="select_assunto">
             <option value="Duvidas">Suguestões</option>
@@ -172,7 +172,7 @@
             <option value="Esclarecimento de Duvidas">Esclarecimento de Duvidas</option>
           </select>
           <br><br>
-          <p>Mensagem:</p><textarea name="mensagem" id="mensagem" cols="30" rows="20" placeholder="Mensagem"></textarea>
+          <p>Mensagem:</p><textarea name="mensagem" id="mensagem" cols="30" rows="20" placeholder="Mensagem" required></textarea>
           <input id="submit_assunto" type="submit" value="Submeter">
         </form>
       </div>
