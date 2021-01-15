@@ -1,45 +1,30 @@
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart1);
+google.charts.setOnLoadCallback(drawChart4);
 
-
-function drawChart1() {
-    var data = google.visualization.arrayToDataTable([
-        ['Ano', 'Índice de Dependência Total', { role: 'style' } ],
-        ['2015', 64.5, 'color: blue'],
-        ['2016', 66.6, 'color: blue'],
-        ['2017', 68.2, 'color: blue'],
-        ['2018', 69.6, 'color: blue'],
-        ['2019', 70.6, 'color: blue']
+function drawChart4() {
+  var data = google.visualization.arrayToDataTable([
+    ['Ano', 'Índice de Dependência Total'],
+    ['2015',  64.5],
+    ['2016',  66.6],
+    ['2017',  68.2],
+    ['2018',  69.6],
+    ['2019',  70.6]
   ]);
 
-  var view = new google.visualization.DataView(data);
-  view.setColumns([0, 1, 1, 2]);
+  var options = {
+    title: 'Índice de Dependência Total do Porto',
+    curveType: 'function',
+    legend: { position: 'bottom' },
+    backgroundColor: '#e0ecf7'
+  };
 
-  var chart = new google.visualization.ComboChart(document.getElementById('columnchart_div'));
+  var chart = new google.visualization.LineChart(document.getElementById('linechart_div'));
 
-  chart.draw(view, {
-    title: "Índice de Dependência Total do Porto",
-    backgroundColor: '#e0ecf7',
-    series: {
-      0: {
-        type: 'bars'
-      },
-      1: {
-       
-        lineWidth: 0,
-        visibleInLegend: false
-      }
-    },
-    vAxis: {
-      maxValue: 100
-    }
-  });
-  
-  
+  chart.draw(data, options);
 }
 
 
 $(window).resize(function(){
-  drawChart1();
+  drawChart4();
 });
 
