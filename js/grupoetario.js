@@ -36,6 +36,7 @@ function chart()
   var options = {
     title: 'Pirâmide Etária dos Utentes Inscritos na USF',
     backgroundColor: '#e0ecf7',
+    colors: ['rgb(0, 149, 248)', 'rgb(190, 18, 18)'],
     isStacked: true,
     hAxis: {
       format: ';'

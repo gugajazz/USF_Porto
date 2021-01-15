@@ -12,6 +12,7 @@ google.charts.load("current", {packages:["corechart"]});
 
         var options = {
           backgroundColor: '#e0ecf7',
+          colors: [ 'rgb(39, 11, 201)','rgb(0, 149, 248)','rgb(190, 18, 18)'],
           title: 'Percentagem de população activa, jovem e idosa no Porto',
           is3D: true,
         };

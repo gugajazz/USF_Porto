@@ -21,6 +21,7 @@ function drawChart1() {
   chart.draw(view, {
     title: "Taxa de Utilização de Consultas na USF",
     backgroundColor: '#e0ecf7',
+    colors: ['rgb(0, 149, 248)'],
     series: {
       0: {
         type: 'bars'

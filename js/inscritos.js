@@ -9,6 +9,7 @@ function drawChart2() {
 
   var options = {
     backgroundColor: '#e0ecf7',
+    colors: ['rgb(0, 149, 248)', 'rgb(190, 18, 18)'],
     title: 'Utentes Inscritos na USF',
     pieHole: 0.4,
   };
