@@ -615,6 +615,10 @@ main h2{
     width: 100%;
     height: 450px;
 }
+#linechart_div{
+    width: 100%;
+    height: 450px;
+}
 .container_conteudo{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
