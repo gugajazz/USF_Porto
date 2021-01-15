@@ -109,9 +109,11 @@
 
   <div class="container_conteudo_grande">
 
+    <h1 class="sem_margem_baixo">Consultas:</h1> 
+
     <div class="conteudo3">
       <form class="form_oqfazemos" action="">
-        <h1>Agendamento de consultas:</h1>
+        <h1>Agendamento de consultas com o seu médico de família:</h1>
         <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>
         <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
         <p>Genero com que se identifica:</p>
@@ -122,20 +124,37 @@
         <p>Idade</p> <input type="number" name="idade" min="0" max="140" required>
         <p>Morada:</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto" required>
         <p>Comentario: (opcional)</p><textarea name="comentario"  rows="5" placeholder=""></textarea>
-        <p>O medico que prefere:</p>
-        <select name="medico" class="select_medico">
-          <option value="Duvidas">Jorge</option>
-          <option value="Reclamacoes">Miguel</option>
-          <option value="Esclarecimento de Duvidas">Luisa</option>
-        </select>
         <br><br>
         <input id="submit_consulta" type="submit" value="Submeter">
       </form>
     </div>
 
+    <div class="conteudo3">
+      <form class="form_oqfazemos" action="">
+        <h1>Escolha de médico de família:</h1>
+        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>
+        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
+        <p>O medico que prefere:</p>
+        <select name="medico" class="select_medico">
+          <option value="Duvidas">Jorge Sampaio Jr</option>
+          <option value="Reclamacoes">Miguel Coimbrona</option>
+          <option value="Esclarecimento de Duvidas">Luisa Vans Gogh</option>
+        </select>
+        <br><br>
+
+        <p class="smoll">Será contactado brevemente com mais informações</p>
+        <input id="submit_consulta" type="submit" value="Submeter">
+      </form>
+    </div>
   </div>
 
+
+  <h1 class="sem_margem_baixo">Ações, serviços e atividades da USF Porto:</h1> 
+
   <div class="container_conteudo">
+
+
     <div class="conteudo1">
       <h1>Programa de Vacinação</h1>
       <h2>Onde me posso vacinar?</h2>
