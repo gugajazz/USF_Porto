@@ -31,9 +31,7 @@ img{
 /* #region Nav */
 #onde_estamos{
     display: none;
-    
 }
-
 header{
     width:100%; /*largura igual largura pagina*/
     background-color:#849ead; /*cor header*/
@@ -158,11 +156,18 @@ display: block;
 }
 @media (max-width: 1050px) {
     #onde_estamos{
-        display: inline;
-        margin: 0 0 0 27%;
-        font-size: 30px;
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+        height:44.8px;
+        margin: 0 0 0 0;
+        display: inline-block;
+        margin: 0 20%;
+/*         margin: 0 0 0 27%;
+ */     font-size: 30px;
         font-weight: 600;
-        color: #023B64;
+        color: white;
+        text-shadow: -1px -1px 0 rgb(99, 98, 98), 1px -1px 0 rgb(99, 98, 98), -1px 1px 0 rgb(99, 98, 98), 1px 1px 0 rgb(99, 98, 98);
         line-height: 45px;
     }
     #conta_li{
@@ -235,22 +240,25 @@ display: block;
         transition: all 0.4s ease 0s;
     }
 }
-@media (max-width: 760px) {
+@media (max-width: 790px) {
     #onde_estamos{
         font-size: 25px;
-        margin: 0 0 0 15%;
-    }
+        margin: 0 10%;
+     }
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
     #onde_estamos{
-        font-size: 20px;
-        margin: 0 0 0 8%;
-    }
+        width: 150px;
+        font-size: 15px;
+        margin: 0 10%;
+     }
 }
 @media (max-width: 390px) {
     #onde_estamos{
-        margin: 0 0 0 0%;
-        font-size: 15px;
+        width: 100px;
+        margin: 0 0 0 2%;
+        font-size: 12px;
+        padding-bottom: 10px;
     }
 }
 /* tem prioridade a todas as de cima */
@@ -294,6 +302,15 @@ main h1{
     margin: 0 auto 5% auto;
     color: #253237;
     font-size: 30px;
+    line-height: 30px;
+}
+.sem_margem_baixo{
+    text-align: center;
+    padding: 0;
+    width: 70%;
+    margin: 5% auto 0 auto;
+    color: #253237;
+    font-size: 35px;
     line-height: 30px;
 }
 main h2{
@@ -582,6 +599,7 @@ main h2{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px 30px 0 30px;
+    margin-bottom: 100px;
 }
 .conteudo1{    
     max-width: 600px;
