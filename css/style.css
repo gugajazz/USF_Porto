@@ -543,7 +543,7 @@ main h2{
     border: 1px solid #ddd;
     width: 50%;
 }
-.form_oqfazemos input:focus{
+.form_oqfazemos :focus, .form_quemsomos :focus{
     border-color: rgb(43, 79, 236);
 }
 .radios .shit{
