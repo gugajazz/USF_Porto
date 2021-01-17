@@ -292,7 +292,7 @@ display: block;
 
 
 /* #region Main */
-.collapsible {
+.caixa_dropdown {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -304,12 +304,12 @@ display: block;
     font-size: 15px;
     border-radius: 15px;
 }
-.active, .collapsible:hover {
+.active, .caixa_dropdown:hover {
     background-color: #555;
 }
 .content {
     padding: 0 18px;
-    display: none;
+    display: none; /*começa escondido*/
     overflow: hidden;
     background-color: #f1f1f1;
     border-radius: 10px;
