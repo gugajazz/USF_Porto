@@ -50,8 +50,10 @@ section{ /*logo mais hamburger*/
     padding:20px 0 0 0; /* padding em cima p centrar na vertical */
 }
 #logo img{
-    width: 80px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    vertical-align:top;
 }
 nav img{
     width: 50px;

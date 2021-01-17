@@ -1,15 +1,48 @@
-$colorbg: #e0ecf7;
-$text-color: #023B64;
+$colorbg: #849EAD;
+$cor-fronteira:#808080;
+$text-color: white;
 $text-font: 'Times New Roman', Times, serif;
-$font-size: 20px;
+$font-size-grande: 40px;
+$font-size-medio: 25px;
 $text-position: center;
-$padding: 100px;
+$outline-texto:-1px -1px 0 rgb(99, 98, 98), 1px -1px 0 rgb(99, 98, 98), -1px 1px 0 rgb(99, 98, 98), 1px 1px 0 rgb(99, 98, 98);
+$tamanho-img-quadrada:200px;
+
+.caixa-login {
+    background-color: $colorbg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 60%;
+    border-radius: 50px;
+    border: 4px solid $cor-fronteira;
+    
+        h1 {
+            color: $text-color;
+            text-shadow: $outline-texto;
+            font-family: $text-font;
+            font-size: $font-size-grande;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        h2 {
+            color: white;
+            text-shadow: $outline-texto;
+            font-family: $text-font;
+            font-size: $font-size-medio;
+            text-align: center;
+        }
+        
+        img{
+            height: $tamanho-img-quadrada;
+            width: $tamanho-img-quadrada;
+            margin: 0 auto;
+        }
+    }
 
 body{
-background-color: $colorbg;
-color: $text-color;
-font-family: $text-font;
-font-size: $font-size;
-text-align: $text-position;
-padding: $padding;
+    background-color: $colorbg;
 }
