@@ -524,8 +524,9 @@ main h2{
     appearance: none;
     background-color: #fff;
 }
-.form_quemsomos #submit_assunto:hover{
+.form_quemsomos #submit_assunto:hover, #submit_consulta:hover{
     background-color: grey;
+    cursor: pointer;
 }
 .form_oqfazemos{
     display: flex;
