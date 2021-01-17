@@ -267,7 +267,7 @@ display: block;
 /*td a baixo de 420*/
 @media (max-width: 420px) {
     nav{ /*dropdown menu*/
-        top:80px; /*distancia do topo*/
+        top:94px; /*distancia do topo*/
     }
     .toggle-menu ul{
         width:35px; /* largura do hamburger */

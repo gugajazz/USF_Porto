@@ -107,50 +107,8 @@
 
 <main>
 
-  <div class="container_conteudo_grande">
 
-    <h1 class="sem_margem_baixo">Consultas:</h1> 
-
-    <div class="conteudo3">
-      <form class="form_oqfazemos" action="">
-        <h1>Agendamento de consultas com o seu médico de família:</h1>
-        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>
-        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
-        <p>Género com que se identifica:</p>
-        <br>
-        Homem<input type="radio" name="sexo" value="H" required>
-        Mulher<input type="radio" name="sexo" value="M" required><br>
-        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
-        <p>Idade</p> <input type="number" name="idade" min="0" max="140" required>
-        <p>Morada:</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto" required>
-        <p>Comentário: (opcional)</p><textarea name="comentario"  rows="5" placeholder=""></textarea>
-        <br><br>
-        <input id="submit_consulta" type="submit" value="Submeter">
-      </form>
-    </div>
-
-    <div class="conteudo3">
-      <form class="form_oqfazemos" action="">
-        <h1>Escolha de médico de família:</h1>
-        <p>Nome Completo:</p> <input type="text" name="nome" placeholder="Nome" required>
-        <p>O Seu Email:</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
-        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
-        <p>O médico  que prefere:</p>
-        <select name="medico" class="select_medico">
-          <option value="Duvidas">Dr Jorge Alvaro Sampaio</option>
-          <option value="Reclamacoes">Dr Miguel Sobreiro da Silva</option>
-          <option value="Esclarecimento de Duvidas">Dra Luisa Simão Rebolho</option>
-        </select>
-        <br><br>
-
-        <p class="smoll">Será contactado brevemente com mais informações</p>
-        <input id="submit_consulta" type="submit" value="Submeter">
-      </form>
-    </div>
-  </div>
-
-
-  <h1 class="sem_margem_baixo">Ações, serviços e atividades da USF Porto:</h1> 
+  <h1 class="sem_margem_baixo">Ações, serviços e atividades da USF Porto</h1> 
 
   <div class="container_conteudo">
 
@@ -193,7 +151,7 @@
       <h2>Quais os cuidados alimentares a seguir por quem toma anticoagulantes orais?</h2>
       <p>O uso de anticoagulantes em Portugal tem vindo a aumentar nos últimos anos,  tendência que poderá ter como explicação o aumento da esperança média de vida e a crescente 
         prevalência das doenças cardiovasculares.</p>
-      <h2>Recomenda-se:</h2>
+      <h2>Recomenda-se</h2>
       <p>•Utilizar a menor quantidade possível de gordura na confeção dos alimentos;</p>
       <p>•Deve sempre informar o seu médico, caso tome ou pretenda vir a tomar algum suplemento com Vitamina E</p>
       <p>•O consumo excessivo de bebidas alcoólicas deve ser evitado. Contudo, um consumo pontual e moderado não parece ser prejudicial.</p><br>
@@ -201,6 +159,50 @@
     </div>
 
   </div>
+
+  <div class="container_conteudo_grande">
+
+    <h1 class="sem_margem_baixo">Consultas</h1> 
+
+    <div class="conteudo3">
+      <form class="form_oqfazemos" action="">
+        <h1>Agendamento de consultas com o seu médico de família</h1>
+        <p>Nome Completo</p> <input type="text" name="nome" placeholder="Nome" required>
+        <p>O Seu Email</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+        <p>Género com que se identifica</p>
+        <br>
+        Homem<input type="radio" name="sexo" value="H" required>
+        Mulher<input type="radio" name="sexo" value="M" required><br>
+        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
+        <p>Idade</p> <input type="number" name="idade" min="0" max="140" required>
+        <p>Morada</p> <input type="text" name="morada" placeholder="Rua de Santos Pousada 298, 4000-478 Porto" required>
+        <p>Comentário (opcional)</p><textarea name="comentario"  rows="5" placeholder=""></textarea>
+        <br><br>
+        <input id="submit_consulta" type="submit" value="Submeter">
+      </form>
+    </div>
+
+    <div class="conteudo3">
+      <form class="form_oqfazemos" action="">
+        <h1>Escolha de médico de família</h1>
+        <p>Nome Completo</p> <input type="text" name="nome" placeholder="Nome" required>
+        <p>O Seu Email</p> <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+        <p>Cartão de Identificação</p> <input type="cc" name="cc" placeholder="312545869ZY4" required>
+        <p>O médico  que prefere</p>
+        <select name="medico" class="select_medico">
+          <option value="Duvidas">Dr Jorge Alvaro Sampaio</option>
+          <option value="Reclamacoes">Dr Miguel Sobreiro da Silva</option>
+          <option value="Esclarecimento de Duvidas">Dra Luisa Simão Rebolho</option>
+        </select>
+        <br><br>
+
+        <p class="smoll">Será contactado brevemente com mais informações</p>
+        <input id="submit_consulta" type="submit" value="Submeter">
+      </form>
+    </div>
+  </div>
+  <br><br><br>
+
 </main>
 
 <footer>
@@ -208,7 +210,7 @@
     <p>Rua de Santos Pousada 298, 4000-478 Porto</p>
     <p>Copyright © 2020 USF Porto. All rights reserved.Company Registration No. 250219242G.</p>
     <div class="social">
-      <p>Acompanhe-nos: </p>
+      <p>Acompanhe-nos </p>
       <ul>
         <li><a href="https://www.instagram.com"><img src="imgs/instagram.png" alt="instagram"></a></li>
         <li><a href="https://www.linkedin.com/"><img src="imgs/linkedln.png" alt="linkedin"></a></li>
