@@ -6,7 +6,8 @@ $font-size-grande: 40px;
 $font-size-medio: 25px;
 $text-position: center;
 $outline-texto:-1px -1px 0 rgb(99, 98, 98), 1px -1px 0 rgb(99, 98, 98), -1px 1px 0 rgb(99, 98, 98), 1px 1px 0 rgb(99, 98, 98);
-$tamanho-img-quadrada:200px;
+$tamanho-img-quadrada-grande:200px;
+$tamanho-img-quadrada-pequena:150px;
 
 .caixa-login {
     background-color: $colorbg;
@@ -37,8 +38,8 @@ $tamanho-img-quadrada:200px;
         }
         
         img{
-            height: $tamanho-img-quadrada;
-            width: $tamanho-img-quadrada;
+            height: $tamanho-img-quadrada-grande;
+            width: $tamanho-img-quadrada-grande;
             margin: 0 auto;
         }
     }
@@ -46,3 +47,10 @@ $tamanho-img-quadrada:200px;
 body{
     background-color: $colorbg;
 }
+
+@media (max-width: 420px) {
+    .caixa-login img {
+      height: $tamanho-img-quadrada-pequena;
+      width: $tamanho-img-quadrada-pequena;
+    }
+  }
