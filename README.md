@@ -4,13 +4,13 @@
 Developed by myself and a colleague.
 
 ## Goals and Features
-The objective was to build a responsive website (with no backend) for a local hospital, featuring:
-- articles
-- a slideshow
-- forms
-- graphs
-- login / account creation
-- among other features
+The objective was to build a responsive website (with no back/end) for a local hospital, featuring:
+- Articles
+- A slideshow
+- Forms
+- Graphs
+- Login / account creation
+- Among other features
 
 ## Images
 
