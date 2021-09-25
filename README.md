@@ -15,7 +15,6 @@ The objective was to build a responsive website (with no back/end) for a local h
 ## Images
 
 
-Menu:<br>
 <div align="center">
   <img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/home.png" width=80%> <br><br><br>
   <img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/quem_somos.png" width=80%> <br><br><br>
