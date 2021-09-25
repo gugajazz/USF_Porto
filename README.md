@@ -16,6 +16,13 @@ The objective was to build a responsive website (with no backend) for a local ho
 
 
 Menu:<br>
-![alt text](https://github.com/gugajazz/USF_Porto/blob/master/imgs/home.png?raw=true)
-<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/home.png" width=80%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/home.png" width=50%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/quem_somos.png" width=50%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/fazemos.png" width=80%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/indicadores.png" width=80%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/recursos.png" width=80%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/apoio.png" width=80%>
+<img src="https://github.com/gugajazz/USF_Porto/blob/master/imgs/login.png" width=80%>
+
+
 <br><br>
